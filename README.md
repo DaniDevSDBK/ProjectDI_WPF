@@ -39,7 +39,7 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Recursos adicionales
 
-- [Documentación](https://tu-usuario.github.io/tu-proyecto/)
+- [Documentación](https://github.com/DaniDevSDBK/ProjectDI/blob/master/Others/Help/index.html)
 - [Página de inicio](https://tu-usuario.github.io/tu-proyecto/)
 - [Ejemplos de código](https://github.com/tu-usuario/tu-proyecto/tree/master/ejemplos)
 
