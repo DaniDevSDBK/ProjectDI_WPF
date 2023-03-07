@@ -37,30 +37,6 @@ The present code can be used in other projects. However, it is suggested to cons
 ### Admin Panel
 ![Admin Panel](./Others/AdminPanel.png)
 
-## Instalación
-
-Explica cómo instalar y configurar tu proyecto en un entorno de desarrollo o producción. Si es necesario, proporciona un ejemplo de archivo de configuración.
-
-## Uso
-
-Describe cómo utilizar tu proyecto y proporciona algunos ejemplos. Si es posible, proporciona también ejemplos de código.
-
-## Contribución
-
-Explica cómo los usuarios pueden contribuir al proyecto. Por ejemplo, puedes incluir una guía para la presentación de problemas y/o solicitudes de extracción.
-
-## Créditos
-
-Agradece a las personas que han contribuido al proyecto. Si has utilizado bibliotecas de terceros, asegúrate de incluirlas en esta sección y darles crédito.
-
-## Licencia
-
-Especifica la licencia bajo la cual se distribuye tu proyecto.
-
-## Contacto
-
-Proporciona información sobre cómo los usuarios pueden contactarte en caso de tener preguntas o problemas.
-
 ## Recursos adicionales
 
 - [Documentación](https://tu-usuario.github.io/tu-proyecto/)
