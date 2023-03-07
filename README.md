@@ -17,9 +17,13 @@ The present code can be used in other projects. However, it is suggested to cons
 - Users can change their profile in the settings tab. (Profile picture funtionality is not implemented. However, you can implement using a Blob type in your DB and       MemoryStream to read it in your app).
 - Admin Panel lacks design. However, the functionality is implemented.
 
-## Capturas de pantalla
+## Screenshots
 
-![Log In](./Others/LogIn.png)
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
 ## Instalación
 
