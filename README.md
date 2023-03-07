@@ -19,7 +19,7 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Screenshots
 
-You can see the app screenshots [here](https://github.com/DaniDevSDBK/ProjectDI/Others/index.html).
+You can see the app screenshots [here](https://DaniDevSDBK.github.com/ProjectDI/Others/index.html).
 
 
 ## Instalación
