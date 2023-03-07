@@ -18,23 +18,23 @@ The present code can be used in other projects. However, it is suggested to cons
 - Admin Panel lacks design. However, the functionality is implemented.
 
 ## Screenshots
-###LogIn
+### LogIn 
 ![Log In](./Others/LogIn.png)
-###Register
+### Register
 ![Register](./Others/Register.png)
-###Home
+### Home
 ![Home](./Others/Home.png)
-###Newcomers
+### Newcomers
 ![Newcomers](./Others/Newcomers.png)
-###Find My Game
+### Find My Game
 ![Find My Game](./Others/FindMyGame.png)
-###My Library
+### My Library
 ![My Library](./Others/MyLibrary.png)
-###Settings
+### Settings
 ![Settings](./Others/Settings.png)
-###Help
+### Help
 ![Help](./Others/Help.png)
-###Admin Panel
+### Admin Panel
 ![Admin Panel](./Others/AdminPanel.png)
 
 ## Instalación
