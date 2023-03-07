@@ -11,7 +11,7 @@ Una descripción breve del proyecto y su objetivo.
 
 ## Capturas de pantalla
 
-<script src="Others/tabs.js"></script>
+<script src="/Others/tabs.js"></script>
 
 ## Instalación
 
