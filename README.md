@@ -19,29 +19,8 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Screenshots
 
-```
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+You can see the app screenshots [here](./Others/index.html).
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
-  <ul class="slider">
-    <li><img src="./Others/LogIn.png"></li>
-    <li><img src="./Others/Register.png"></li>
-    <li><img src="./Others/Home.png"></li>
-  </ul>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
-      });
-    });
-  </script>
-  ```
 
 ## Instalación
 
