@@ -43,4 +43,4 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## SQL
 
-- Click [here](./Others/Script.sql)
+- Click [here](./Others/Script.sql) to access the sql file.
