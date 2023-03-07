@@ -64,7 +64,7 @@ namespace KLGproject.Repositories.Controls
                 else
                 {
 
-                    this.db.UpdateUser(_currentUser.Id, this.txtUserName.Text, this.txtEmail.Text, this.txtPassword.Password);
+                    this.db.UpdateUser(_currentUser.Id, this.txtUserName.Text, this.txtEmail.Text, BCrypt.Net.BCrypt.HashPassword(this.txtPassword.Password,11));
                     this.ErrorLabel.Content = "";
                     this.txtUserName.Text = _currentUser.Name;
                     this.txtEmail.Text = _currentUser.Email;

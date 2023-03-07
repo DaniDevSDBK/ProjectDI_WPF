@@ -154,7 +154,7 @@ namespace KLGproject.Repositories.Controls
 
                 Dictionary<string, object> parameters = new Dictionary<string, object>();
                 parameters.Add("@Username", this.txtBUserName.Text);
-                parameters.Add("@Password", this.PasswordBox.Password);
+                parameters.Add("@Password", BCrypt.Net.BCrypt.HashPassword(this.PasswordBox.Password, 11));
                 parameters.Add("@AccessLevel", 0);
 
                 myDb.ExecuteNonQuery("INSERT INTO USER (NAME, PWD, TIPO) VALUES (@Username, @Password, @AccessLevel)", parameters);

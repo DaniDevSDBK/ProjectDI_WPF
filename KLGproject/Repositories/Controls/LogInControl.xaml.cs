@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using KLGproject.Repositories.AppObjects;
 using KLGproject.Repositories.CustomEvents;
 using KLGproject.Repositories.CustomExceptions;
+using BCrypt.Net;
 
 namespace KLGproject.Repositories.Controls
 {
@@ -74,9 +75,7 @@ namespace KLGproject.Repositories.Controls
 
                 _tryUser = myDb.GetUserByName(name);
 
-                //BCrypt.Net.BCrypt.HasPassword(string,salt)
-                //.verify(contraseña_textbox, contraseña_db
-                if (_tryUser.Password.Equals(this.txtBUserPassword.Password))
+                if (BCrypt.Net.BCrypt.Verify(this.txtBUserPassword.Password, _tryUser.Password))
                 {
 
                     userLoginEvent(this, new LoggedIn(true, _tryUser));

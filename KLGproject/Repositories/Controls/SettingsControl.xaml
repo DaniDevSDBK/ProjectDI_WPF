@@ -44,7 +44,7 @@
                         <TextBox x:Name="txtEmail" Text="useremail@example.com" Margin="0 0 0 10"/>
                         <PasswordBox x:Name="txtPassword" Margin="0 0 0 10"/>
                         <Button x:Name="btnSave" Content="Save" ToolTip="Save Profile Changes" Width="150" Height="50" Style="{StaticResource LogInButton}" Click="btnSave_Click"/>
-                        <Label x:Name="ErrorLabel" Margin="10" Foreground="Red"/>
+                        <Label x:Name="ErrorLabel" Content="Current User Info" Margin="10" Foreground="Red"/>
                     </StackPanel>
                 </StackPanel>
             </Grid>
