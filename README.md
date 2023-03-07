@@ -11,7 +11,7 @@ Una descripción breve del proyecto y su objetivo.
 
 ## Capturas de pantalla
 
-Inserta algunas capturas de pantalla de tu proyecto para mostrar su apariencia y funcionalidad.
+<script src="Others/tabs.js"></script>
 
 ## Instalación
 
