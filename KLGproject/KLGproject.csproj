@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>AppDocumentation.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LogIn\LogInWindow.xaml.cs~RFb87dd5e.TMP" />
+    <None Remove="MainWindow.xaml~RFb76fde9.TMP" />
+    <None Remove="Repositories\Controls\LogInControl.xaml~RFbdda832.TMP" />
+    <None Remove="Repositories\Controls\RegisterControl.xaml~RF2adad3.TMP" />
+    <None Remove="Repositories\virrvlyp.mge~" />
+    <None Remove="Resources\Img\ContextMenu.png" />
+    <None Remove="Resources\Img\LogInBackgroundTree.jpg" />
+    <None Remove="Resources\Img\RegisterStoneWallBackground.jpg" />
+    <None Remove="Resources\Img\user_profile_picture.png" />
+    <None Remove="Resources\Libraries\DB.Lib\23dwlxio.xfj~" />
+    <None Remove="Resources\Styles\r1utk4hc.zac~" />
+    <None Remove="Resources\Styles\ubwgd4kd.ypa~" />
+    <None Remove="Resources\Styles\wyqgwhky.wow~" />
+    <None Remove="w1ahcs3g.oa3~" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.2.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="MySqlConnector" Version="2.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.117" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\DB\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Img\ContextMenu.png" />
+    <Resource Include="Resources\Img\LogInBackgroundTree.jpg" />
+    <Resource Include="Resources\Img\RegisterStoneWallBackground.jpg" />
+    <Resource Include="Resources\Img\user_profile_picture.png" />
+  </ItemGroup>
+
+</Project>

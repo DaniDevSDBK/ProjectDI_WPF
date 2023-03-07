@@ -1,0 +1,193 @@
+﻿<UserControl x:Class="KLGproject.Repositories.Controls.LogInControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KLGproject.Repositories.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" 
+             d:DesignWidth="550">
+
+
+    <UserControl.Resources>
+
+        <ResourceDictionary>
+
+            <RoutedUICommand x:Key="LogInCommand"/>
+            <RoutedUICommand x:Key="RegisterCommand"/>
+
+        </ResourceDictionary>
+
+    </UserControl.Resources>
+
+    <UserControl.InputBindings>
+
+        <KeyBinding Key="Enter" Command="{StaticResource LogInCommand}"/>
+        <KeyBinding Key="R" Modifiers="Ctrl" Command="{StaticResource RegisterCommand}"/>
+
+    </UserControl.InputBindings>
+
+    <UserControl.CommandBindings>
+
+        <CommandBinding Command="{StaticResource LogInCommand}" Executed="btnLogIn_Click"/>
+        <CommandBinding Command="{StaticResource RegisterCommand}" Executed="btnRegister_Click"/>
+
+    </UserControl.CommandBindings>
+
+    <!--RationalRose-->
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush ImageSource="/Resources/Img/LogInBackgroundTree.jpg"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="80"/>
+
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <!--ButtonClose-->
+            <RowDefinition Height="50"/>
+            <!--Blank-->
+            <RowDefinition Height="50"/>
+            <!--LoginArea-->
+            <RowDefinition/>
+            <!--Blank-->
+            <RowDefinition Height="100"/>
+
+        </Grid.RowDefinitions>
+
+        <!--CloseButton-->
+        <Button x:Name="btnClose"
+                Height="30"
+                Margin="0"
+                Width="30"
+                Grid.Row="0"
+                Grid.Column="2"
+                Click="btnClose_Click"
+                Style="{StaticResource CloseButtonStyle}"/>
+
+        <Border Grid.Column="1" 
+                Grid.Row="2"
+                Background="WhiteSmoke" Opacity="0.85"
+                CornerRadius="10">
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+
+                    <!--Blank-->
+                    <RowDefinition Height="25"/>
+                    <!--UserLabel-->
+                    <RowDefinition Height="50"/>
+                    <!--Blank-->
+                    <RowDefinition Height="10"/>
+                    <!--UserNameTextBox-->
+                    <RowDefinition/>
+                    <!--Blank-->
+                    <RowDefinition Height="10"/>
+                    <!--PasswordLabel-->
+                    <RowDefinition Height="50"/>
+                    <!--Blank-->
+                    <RowDefinition Height="10"/>
+                    <!--PasswordTextBox-->
+                    <RowDefinition/>
+                    <!--Blank-->
+                    <RowDefinition Height="10"/>
+                    <!--LogIn-->
+                    <RowDefinition/>
+                    <!--blank-->
+                    <RowDefinition Height="10"/>
+                    <!--Register-->
+                    <RowDefinition/>
+                    <!--Blank-->
+                    <RowDefinition Height="10"/>
+                    <!--ErrorLabelMsg-->
+                    <RowDefinition/>
+                    <!--Blank-->
+                    <RowDefinition Height="25"/>
+
+                </Grid.RowDefinitions>
+
+                <!--UserLabel-->
+                <Label Grid.Column="1"
+                   Grid.Row="1"
+                   Content="User Name"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   FontFamily="Segoe UI"
+                   FontSize="12"
+                   FontWeight="ExtraBold"
+                   Foreground="DarkGoldenrod"/>
+
+                <!--UserNameTextBox-->
+                <TextBox x:Name="txtBUserName"
+                         TextAlignment="Center"
+                         Grid.Column="1"
+                         Grid.Row="3"
+                         Style="{StaticResource LogInTextBox}"/>
+
+                <!--UserLabel-->
+                <Label Grid.Column="1"
+                   Grid.Row="5"
+                   Content="Password"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Bottom"
+                   FontFamily="Segoe UI"
+                   FontSize="12"
+                   FontWeight="ExtraBold"
+                   Foreground="DarkGoldenrod"/>
+
+                <!--PasswordTextBox-->
+                <PasswordBox x:Name="txtBUserPassword"
+                         Grid.Column="1"
+                         Grid.Row="7" 
+                         HorizontalContentAlignment="Center"
+                         VerticalContentAlignment="Bottom"
+                         Style="{StaticResource PasswordBoxTextBox}"/>
+
+                <!--LogIn-->
+                <Button Grid.Row="9"
+                        Width="100"
+                        Height="30"
+                        x:Name="btnLogIn"
+                        Style="{StaticResource LogInButton}" Click="btnLogIn_Click">
+
+                    LogIn
+
+                </Button>
+
+                <!--Register-->
+                <Button Grid.Row="11"
+                        Width="100"
+                        Height="30"
+                        Background="DarkGoldenrod"
+                        x:Name="btnRegister"
+                        Click="btnRegister_Click"
+                        Style="{StaticResource RegisterButtonStyle}">
+
+                    Register
+
+                </Button>
+
+                <!--LabelMsg-->
+                <Label x:Name="lblMsgError"
+                       Grid.Row="13"
+                       Margin="0"
+                       Foreground="Red"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       HorizontalContentAlignment="Center"
+                       VerticalContentAlignment="Center"/>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+</UserControl>

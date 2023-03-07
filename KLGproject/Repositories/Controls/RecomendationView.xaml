@@ -1,0 +1,173 @@
+﻿<UserControl x:Class="KLGproject.Repositories.Controls.RecomendationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             xmlns:local="clr-namespace:KLGproject.Repositories.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <Border Background="DarkGray" CornerRadius="25">
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+                
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="10"/>
+
+            </Grid.RowDefinitions>
+
+            <Border x:Name="BorderGame"
+                    Grid.Row="1"
+                    CornerRadius="25"
+                    Grid.Column="1"
+                    Background="CadetBlue">
+
+                <Grid>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="10"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="10"/>
+
+                    </Grid.RowDefinitions>
+                    
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="10"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="10"/>
+                        
+                    </Grid.ColumnDefinitions>
+
+                    <Image x:Name="ThumbnailImg"
+                           Grid.Row="1"
+                           Grid.Column="1"/>
+
+                    <StackPanel Grid.Row="1"
+                                Grid.Column="2"
+                                Grid.RowSpan="2">
+
+                        <TextBlock  x:Name="txtTitle"
+                                    Height="40"
+                                    Background="LightGray"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                        <TextBlock  x:Name="txtGenre"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                        <TextBlock  x:Name="txtPublisher"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                        <TextBlock  x:Name="txtDeveloper"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/> 
+                        
+                        <TextBlock  x:Name="txtDate"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                    </StackPanel>
+
+                    <TextBlock x:Name="txtShortDescription"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               Background="LightGray"
+                               TextWrapping="Wrap"
+                               Margin="20">
+                        
+                    </TextBlock>
+
+                </Grid>
+
+            </Border>
+
+            <Grid Grid.Row="2"
+                  Grid.Column="1">
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnGoBack"
+                        Grid.Column="0"
+                        Width="80"
+                        Height="40"
+                        HorizontalAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Click="btnGoBack_Click"
+                        Style="{StaticResource NavigationButtonStyle}">
+
+                    <fa:IconImage Icon="ArrowLeftLong"/>
+
+                </Button>
+                
+                <Button x:Name="btnDownloadk"
+                        Grid.Column="1"
+                        Width="80"
+                        Height="40"
+                        HorizontalAlignment="Center"
+                        ToolTip="This Button will redirect you to the oficial page where you can install the game."
+                        VerticalContentAlignment="Center"
+                        Click="btnDownloadk_Click"
+                        Style="{StaticResource NavigationButtonStyle}">
+
+                    <fa:IconImage Icon="Download"/>
+
+                </Button>
+                
+                <Button x:Name="btnGoForeward"
+                        Grid.Column="2"
+                        Width="80"
+                        Height="40"
+                        HorizontalAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Click="btnGoForeward_Click"
+                        Style="{StaticResource NavigationButtonStyle}">
+
+                    <fa:IconImage Icon="ArrowRightLong"/>
+
+                </Button>
+
+            </Grid>
+
+        </Grid>
+        
+    </Border>
+    
+</UserControl>

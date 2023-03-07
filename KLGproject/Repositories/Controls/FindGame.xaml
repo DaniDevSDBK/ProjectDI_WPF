@@ -1,0 +1,280 @@
+﻿<UserControl x:Class="KLGproject.Repositories.Controls.FindGame"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:KLGproject.Repositories.Controls"
+             xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="8"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="8"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!-- Search by category -->
+        <Label Grid.Row="0" Grid.Column="0" Content="Search by category:" Margin="10" Foreground="WhiteSmoke"/>
+        <ComboBox x:Name="cbCategory"  Grid.Row="0" Grid.Column="1" Margin="10" Width="120">
+            <ComboBoxItem>None</ComboBoxItem>
+            <ComboBoxItem>MMORPG</ComboBoxItem>
+            <ComboBoxItem>Shooter</ComboBoxItem>
+            <ComboBoxItem>Strategy</ComboBoxItem>
+            <ComboBoxItem>MOBA</ComboBoxItem>
+            <ComboBoxItem>Racing</ComboBoxItem>
+            <ComboBoxItem>Sports</ComboBoxItem>
+            <ComboBoxItem>Social</ComboBoxItem>
+            <ComboBoxItem>Sandbox</ComboBoxItem>
+            <ComboBoxItem>Open-world</ComboBoxItem>
+            <ComboBoxItem>Survival</ComboBoxItem>
+            <ComboBoxItem>PvP</ComboBoxItem>
+            <ComboBoxItem>PvE</ComboBoxItem>
+            <ComboBoxItem>Pixel</ComboBoxItem>
+            <ComboBoxItem>Voxel</ComboBoxItem>
+            <ComboBoxItem>Zombie</ComboBoxItem>
+            <ComboBoxItem>Turn-based</ComboBoxItem>
+            <ComboBoxItem>First-person</ComboBoxItem>
+            <ComboBoxItem>Third-person</ComboBoxItem>
+            <ComboBoxItem>Top-down</ComboBoxItem>
+            <ComboBoxItem>Tank</ComboBoxItem>
+            <ComboBoxItem>Space</ComboBoxItem>
+            <ComboBoxItem>Sailing</ComboBoxItem>
+            <ComboBoxItem>Side-scroller</ComboBoxItem>
+            <ComboBoxItem>Superhero</ComboBoxItem>
+            <ComboBoxItem>Permadeath</ComboBoxItem>
+            <ComboBoxItem>Card</ComboBoxItem>
+            <ComboBoxItem>Battle-royale</ComboBoxItem>
+            <ComboBoxItem>MMO</ComboBoxItem>
+            <ComboBoxItem>MMOFPS</ComboBoxItem>
+            <ComboBoxItem>MMOTPS</ComboBoxItem>
+            <ComboBoxItem>3D</ComboBoxItem>
+            <ComboBoxItem>2D</ComboBoxItem>
+            <ComboBoxItem>Anime</ComboBoxItem>
+            <ComboBoxItem>Fantasy</ComboBoxItem>
+            <ComboBoxItem>Sci-fi</ComboBoxItem>
+            <ComboBoxItem>Fighting</ComboBoxItem>
+            <ComboBoxItem>Action-RPG</ComboBoxItem>
+            <ComboBoxItem>Action</ComboBoxItem>
+            <ComboBoxItem>Military</ComboBoxItem>
+            <ComboBoxItem>Martial-arts</ComboBoxItem>
+            <ComboBoxItem>Flight</ComboBoxItem>
+            <ComboBoxItem>Low-spec</ComboBoxItem>
+            <ComboBoxItem>Tower-defense</ComboBoxItem>
+            <ComboBoxItem>Horror</ComboBoxItem>
+            <ComboBoxItem>MMORTS</ComboBoxItem>
+        </ComboBox>
+        
+        <!-- Border To split the content -->
+        <Border Grid.Row="0" Grid.Column="2" BorderThickness="3" Background="WhiteSmoke"/>
+
+        <!-- Search by platform -->
+        <Label Grid.Row="0" Grid.Column="3" Content="Search by platform:" Margin="10" Foreground="WhiteSmoke"/>
+        <ComboBox x:Name="cbPlatform" Grid.Row="0" Grid.Column="4" Margin="10" Width="120">
+            <ComboBoxItem>None</ComboBoxItem>
+            <ComboBoxItem>pc</ComboBoxItem>
+            <ComboBoxItem>browser</ComboBoxItem>
+        </ComboBox>
+
+        <!-- Border To split the content -->
+        <Border Grid.Row="0" Grid.Column="5" BorderThickness="3" Background="WhiteSmoke"/>
+        <!-- Search Button -->
+        <!-- btnSearch-->
+        <Button x:Name="btnSearch"
+                Margin="60,0,60,0"
+                BorderThickness="0"
+                Background="Transparent"
+                Grid.Row="0" 
+                ToolTip="Press to Search the game according to the given specifications. (Enter) "
+                Click="btnSearch_Click"
+                Grid.Column="6">
+
+            <fa:IconImage Icon="Search" Width="40" Height="40"/>
+
+        </Button>
+
+        <!--Separator-->
+        <Separator Grid.Row="1" Background="WhiteSmoke" Grid.Column="0" Grid.ColumnSpan="7" Margin="10"/>
+
+        <Border Background="DarkGray" CornerRadius="25" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="5" Margin="20">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="10"/>
+
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="10"/>
+
+                </Grid.RowDefinitions>
+
+                <Border x:Name="BorderGame"
+                    Grid.Row="1"
+                    CornerRadius="25"
+                    Grid.Column="1"
+                    Background="CadetBlue">
+
+                    <Grid>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="10"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="10"/>
+
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Image x:Name="ThumbnailImg"
+                           Grid.Row="1"
+                           Grid.Column="1"/>
+
+                        <StackPanel Grid.Row="1"
+                                Grid.Column="2"
+                                Grid.RowSpan="2">
+
+                            <TextBlock  x:Name="txtTitle"
+                                    Height="40"
+                                    Background="LightGray"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                            <TextBlock  x:Name="txtGenre"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                            <TextBlock  x:Name="txtPublisher"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                            <TextBlock  x:Name="txtDeveloper"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                            <TextBlock  x:Name="txtDate"
+                                    Height="40"
+                                    Margin="15"
+                                    TextAlignment="Center"
+                                    Background="LightGray"
+                                    Style="{StaticResource ModernTextBlock}"/>
+
+                        </StackPanel>
+
+                        <TextBlock x:Name="txtShortDescription"
+                               Grid.Row="2"
+                               Grid.Column="1"
+                               Background="LightGray"
+                               TextWrapping="Wrap"
+                               Margin="20,20,10,20" Grid.ColumnSpan="2">
+
+                        </TextBlock>
+
+                    </Grid>
+
+                </Border>
+
+                <Grid Grid.Row="2"
+                  Grid.Column="1">
+
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="btnGoBack"
+                        Grid.Column="0"
+                        Width="80"
+                        Height="40"
+                        HorizontalAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Click="btnGoBack_Click"
+                        Style="{StaticResource NavigationButtonStyle}">
+
+                        <fa:IconImage Icon="ArrowLeftLong"/>
+
+                    </Button>
+
+                    <Button x:Name="btnDownloadk"
+                        Grid.Column="1"
+                        Width="80"
+                        Height="40"
+                        Click="btnDownloadk_Click"
+                        HorizontalAlignment="Center"
+                        ToolTip="This Button will redirect you to the oficial page where you can install the game."
+                        VerticalContentAlignment="Center"
+                       
+                        Style="{StaticResource NavigationButtonStyle}">
+
+                        <fa:IconImage Icon="Download"/>
+
+                    </Button>
+
+                    <Button x:Name="btnGoForeward"
+                        Grid.Column="2"
+                        Width="80"
+                        Height="40"
+                        Click="btnGoForeward_Click"
+                        HorizontalAlignment="Center"
+                        VerticalContentAlignment="Center"
+                        Style="{StaticResource NavigationButtonStyle}">
+
+                        <fa:IconImage Icon="ArrowRightLong"/>
+
+                    </Button>
+
+                </Grid>
+
+            </Grid>
+
+        </Border>
+
+
+    </Grid>
+
+</UserControl>

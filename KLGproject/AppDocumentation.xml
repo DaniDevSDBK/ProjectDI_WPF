@@ -1,0 +1,911 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>KLGproject</name>
+    </assembly>
+    <members>
+        <member name="T:KLGproject.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:KLGproject.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:KLGproject.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:KLGproject.LogIn.LogInWindow">
+            <summary>
+            Lógica de interacción para LogInWindow.xaml
+            </summary>
+            <summary>
+            LogInWindow
+            </summary>
+        </member>
+        <member name="M:KLGproject.LogIn.LogInWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:KLGproject.MainWindow.#ctor(KLGproject.Repositories.AppObjects.User)">
+            <summary>
+            MainWindow Constructor
+            </summary>
+            <param name="currentUser"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.Button_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Logic for the closession
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.Window_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
+            <summary>
+            Logic to allow the user to move the window when holding the left mouse click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.SelectOption(System.Object,KLGproject.Repositories.CustomEvents.MenuSelectionEvent)">
+            <summary>
+            Selects the option of the menu
+            </summary>
+            <param name="sender"></param>
+            <param name="opc"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.CreateTabItem(System.String,System.String,System.Object)">
+            <summary>
+            Creates a tabItem
+            </summary>
+            <param name="tabName"></param>
+            <param name="tabHeader"></param>
+            <param name="object"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.btnMinimize_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Minimize the window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.btnMaximize_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Maximized the window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Shut down the app
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.ExpandMenu(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Expands or compress the menu
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.GoForeward(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            GoForeward
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.GoBackward(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes Backward
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.Home(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes Home or creates if it doesnt exist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.NewComers(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes Newcomers or creates if it doesnt exist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.MyLibrary(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes Users Library or creates if it doesnt exist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.FindMyGame(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes FindMyGmae menu option or creates if it doesnt exist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.Settings(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes Settings or creates if it doesnt exist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.Help(System.Object,System.Windows.Input.ExecutedRoutedEventArgs)">
+            <summary>
+            Goes Help or creates if it doesnt exist
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.AdminPanel">
+            <summary>
+            Lógica de interacción para AdminPanel.xaml
+            </summary>
+            <summary>
+            AdminPanel
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.AdminPanel.UpdateUsersList">
+            <summary>
+            Update the user list
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.AdminPanel.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.FindGame">
+            <summary>
+            Lógica de interacción para FindGame.xaml
+            </summary>
+            <summary>
+            FindGame
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.btnSearch_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button to search the game
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.btnGoBack_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button to navigate throught the game list
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.btnGoForeward_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button to navigate throught the game list
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.btnDownloadk_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button to download the current game in the list
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.SetCurrentGameView(System.Int32)">
+            <summary>
+            Sets the view to the current item in the index
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.FindGame.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.HelpUserControl">
+            <summary>
+            Lógica de interacción para HelpUserControl.xaml
+            </summary>
+            <summary>
+            HelpUserControl
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.HelpUserControl.Hyperlink_RequestNavigate(System.Object,System.Windows.Navigation.RequestNavigateEventArgs)">
+            <summary>
+            Redirects the user to the link, using his default system browser
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.HelpUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.LogInControl">
+            <summary>
+            Lógica de interacción para LogInControl.xaml
+            </summary>
+            <summary>
+            LogInControl
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.LogInControl.MyEventHandler">
+            Event For LogIn
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.LogInControl.RegisteredEventHandler">
+            Event For Register
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.btnLogIn_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button logic to LogIn
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.CheckUser(System.String)">
+            <summary>
+            Check if the user exists in the data base if not throws new
+            <see cref="T:KLGproject.Repositories.CustomExceptions.UserNotFoundException"/>
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.btnClose_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Logic for Close Button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.txtBUserPassword_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            Event for reset the UserPasswordBox/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.btnRegister_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Logic for register button. throws a new event:
+            <see cref="T:KLGproject.Repositories.CustomEvents.Registered"/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.LogInControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.MainContentViewControl">
+            <summary>
+            Lógica de interacción para MainContentViewControl.xaml
+            </summary>
+            <summary>
+            MainContentViewControl
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.#ctor(KLGproject.Repositories.AppObjects.User)">
+            <summary>
+            Constructor for <see cref="T:KLGproject.Repositories.Controls.MainContentViewControl"/>
+            </summary>
+            <param name="_currentUser"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.InitializeGameList">
+            <summary>
+            Initialize the game List using the method <see cref="M:KLGproject.Resources.Libraries.API.Lib.API.GetGames"/>
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.AddLibraryItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Adds a new Item to the users Library <see cref="T:KLGproject.Repositories.Controls.UserLibrary"/> and removed it from the <see cref="T:KLGproject.Repositories.Controls.MainContentViewControl"/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.DownloadItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Redirects the user to the current game url using the System Default Browser
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.AddToMyWishesList_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Not Implemented
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.LikeItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Sets a like to this game from this user, if the users had already liked the user the next like would not affect to the game rating
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.DislikeItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Sets a dislike to this game from this user, if the users had already disliked the user the next like would not affect to the game rating
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.UpadateGameRating(KLGproject.Repositories.AppObjects.Game)">
+            <summary>
+            Updates the game rating <see cref="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetGameIfExists(System.Int32)"/>
+            </summary>
+            <param name="game"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainContentViewControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.MainMenuControl">
+            <summary>
+            Lógica de interacción para MainMenuControl.xaml
+            </summary>
+            <summary>
+            MainMenuControl
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.MainMenuControl.MyEventHandler">
+            Event For LogIn
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.MainMenuControl.#ctor">
+            <summary>
+            Constructor for <see cref="T:KLGproject.Repositories.Controls.MainMenuControl"/>
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:KLGproject.Repositories.Controls.MainMenuControl.CheckSelection(System.Object,System.Windows.RoutedEventArgs)" -->
+        <member name="M:KLGproject.Repositories.Controls.MainMenuControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.NewComersControl">
+            <summary>
+            Lógica de interacción para NewComersControl.xaml
+            </summary>
+            <summary>
+            NewComersControl
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.#ctor(KLGproject.Repositories.AppObjects.User)">
+            <summary>
+            Constructor for <see cref="T:KLGproject.Repositories.Controls.NewComersControl"/>
+            </summary>
+            <param name="_currentUser"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.InitializeGameList">
+            <summary>
+            Initialize the Game List <see cref="M:KLGproject.Resources.Libraries.API.Lib.API.GetGames"/> and filters it in a query getting the 10 newest games
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.AddLibraryItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Adds a new Item to the users Library <see cref="T:KLGproject.Repositories.Controls.UserLibrary"/> and removed it from the <see cref="T:KLGproject.Repositories.Controls.MainContentViewControl"/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.DownloadItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Redirects the user to the current game url using the System Default Browser
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.AddToMyWishesList_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Not Implemented
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.LikeItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Sets a like to this game from this user, if the users had already liked the user the next like would not affect to the game rating
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.DislikeItem_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Sets a dislike to this game from this user, if the users had already disliked the user the next like would not affect to the game rating
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.UpadateGameRating(KLGproject.Repositories.AppObjects.Game)">
+            <summary>
+            Updates the game rating <see cref="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetGameIfExists(System.Int32)"/>
+            </summary>
+            <param name="game"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.NewComersControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.RecomendationView">
+            <summary>
+            Lógica de interacción para RecomendationView.xaml
+            </summary>
+            <summary>
+            RecomendationView
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.#ctor">
+            <summary>
+            Constructor for <see cref="T:KLGproject.Repositories.Controls.RecomendationView"/>
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.InitializeUserRecomendationList">
+            <summary>
+            Initializes the recomendation list <see cref="T:System.Collections.Generic.List`1"/> by creating a temp List by <see cref="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetMoreLikedGames"/><br/>
+            And getting this games with <see cref="M:KLGproject.Resources.Libraries.API.Lib.API.GetGameById(System.Int32)"/><br/>
+            Sets the current View by <see cref="M:KLGproject.Repositories.Controls.RecomendationView.SetCurrentGameView(System.Int32)"/><br/>
+            Sarts an active reload by using a <see cref="T:System.Threading.Tasks.Task"/> to do the previous code
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.btnGoBack_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Logic for GoBack button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.btnGoForeward_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Logic for GoBack button
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.OnTimedEvent(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>
+            Set a timer to change the current view
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.btnDownloadk_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Redirects the user to the oficial page where he can download the game
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.SetCurrentGameView(System.Int32)">
+            <summary>
+            Sets the view to the current item in the index
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RecomendationView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.RegisterControl">
+            <summary>
+            Lógica de interacción para RegisterControl.xaml
+            </summary>
+            <summary>
+            RegisterControl
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.#ctor">
+            <summary>
+            Constructor for <see cref="T:KLGproject.Repositories.Controls.RegisterControl"/>
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.CheckBox_Checked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            If the Checkbox is checked the button will be enabled and the tooltip deleted
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.CheckBox_Unchecked(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            If the checkbox is unchecked the tooltip will be <see cref="F:KLGproject.Repositories.Controls.RegisterControl.toolTip"/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.CalculatePasswordStrength(System.String)">
+            <summary>
+            Calculates the strong of the password in order the length of its self
+            </summary>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.PasswordBox_PasswordChanged(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            If the password change it recalculates the strenght of it<br/>
+            <see cref="M:KLGproject.Repositories.Controls.RegisterControl.CalculatePasswordStrength(System.String)"/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.RegisterButton_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            The logic of the register button<br/>
+            <see cref="M:KLGproject.Repositories.Controls.RegisterControl.CheckUser(System.String)"/><br/>
+            <see cref="M:KLGproject.Repositories.Controls.RegisterControl.UserAlreadyExist"/>br>
+            <see cref="M:KLGproject.Repositories.Controls.RegisterControl.Register"/>
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.btnGoBack_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Logic for the button goback, it will redirect the user to the LogIn
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.Register">
+            <summary>
+            Logic for the register
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.CheckUser(System.String)">
+            <summary>
+            Gets the user from the database in order to know if already exists<br/>
+            <see cref="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetUserByName(System.String)"/>
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.UserAlreadyExist">
+            <summary>
+            Stablish the error message if the user already exists
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.RegisterControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.SettingsControl">
+            <summary>
+            Lógica de interacción para SettingsControl.xaml
+            </summary>
+            <summary>
+            SettingsControl
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.SettingsControl.#ctor(KLGproject.Repositories.AppObjects.User)">
+            <summary>
+            Constroctor for <see cref="T:KLGproject.Repositories.Controls.SettingsControl"/>
+            </summary>
+            <param name="_currentUser"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.SettingsControl.btnSave_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Check the database and updates the fields for the current user id checking if the name already exits in the database
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.SettingsControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.Controls.UserLibrary">
+            <summary>
+            Lógica de interacción para UserLibrary.xaml
+            </summary>
+            <summary>
+            UserLibrary
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.UserLibrary.#ctor(KLGproject.Repositories.AppObjects.User)">
+            <summary>
+            Constructor for <see cref="T:KLGproject.Repositories.Controls.UserLibrary"/>
+            </summary>
+            <param name="_currentUser"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.UserLibrary.SetGameList">
+            <summary>
+            Set the game users list
+            </summary>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.UserLibrary.OnLibraryChanged(System.Object,System.EventArgs)">
+            <summary>
+            If the library change if update it
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:KLGproject.Repositories.Controls.UserLibrary.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomEvents.LoggedIn">
+            <summary>
+            LoggedInEvent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomEvents.MenuSelectionEvent">
+            <summary>
+            MenuSelectionEvent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomEvents.Registered">
+            <summary>
+            RegisteredEvent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomEvents.RegisterGoBack">
+            <summary>
+            RegisterGoBackEvent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomEvents.UserControlChanged">
+            <summary>
+            UserControlChangedEvent
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomExceptions.GameNotFoundException">
+            <summary>
+            GameNotFoundException
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomExceptions.UserGameNotFoundException">
+            <summary>
+            UserGameNotFoundException
+            </summary>
+        </member>
+        <member name="T:KLGproject.Repositories.CustomExceptions.UserNotFoundException">
+            <summary>
+            UserNotFoundException
+            </summary>
+        </member>
+        <member name="F:KLGproject.Resources.Libraries.API.Lib.API.BaseUrl">
+            Categories for Games 
+            mmorpg, shooter, strategy, moba, racing, sports, social, sandbox, open-world, survival, pvp, pve, pixel, voxel, zombie, turn-based, first-person, third-Person, top-down, tank, space, sailing, side-scroller, superhero, permadeath, card, battle-royale, mmo, mmofps, mmotps, 3d, 2d, anime, fantasy, sci-fi, fighting, action-rpg, action, military, martial-arts, flight, low-spec, tower-defense, horror, mmorts
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.#ctor">
+            <summary>
+            API Constructor
+            </summary>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetGames">
+            <summary>
+            List the games in an async task
+            </summary>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetGamesByPlatform(System.String)">
+            <summary>
+            List the games by platform in asyn task
+            </summary>
+            <param name="platform"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetGamesByCategory(System.String)">
+            <summary>
+            list the games by category in async task
+            </summary>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetGamesSortedAlphabetically">
+            <summary>
+            List the games sorted alphabetically in an async task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetGamesByPlatformAndCategory(System.String,System.String)">
+            <summary>
+            List the games by the platform and catefory in an async task
+            </summary>
+            <param name="platform"></param>
+            <param name="category"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetFilteredGames(System.String,System.String)">
+            <summary>
+            List the games by tag filter and platform
+            </summary>
+            <param name="tag"></param>
+            <param name="platform"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetGameById(System.Int32)">
+            <summary>
+            Get the game by its id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.API.Lib.API.GetJsonAsync``1(System.String)">
+            <summary>
+            Deserialize the JSON
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.#ctor(System.String)">
+            <summary>
+            DataBase Class constructor
+            </summary>
+            <param name="connectionString"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.ExecuteNonQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Executes general non querys
+            </summary>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.ExecuteQuery(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Executes general querys
+            </summary>
+            <param name="sql"></param>
+            <param name="parameters"></param>
+            <returns><see cref="T:System.Collections.Generic.List`1"/></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetGameIfExists(System.Int32)">
+            <summary>
+            Get a game from the DataBase if exists
+            </summary>
+            <param name="gameId"></param>
+            <returns><see cref="T:KLGproject.Repositories.AppObjects.Game"/></returns>
+            <exception cref="T:KLGproject.Repositories.CustomExceptions.GameNotFoundException"></exception>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetUserByName(System.String)">
+            <summary>
+            GetThe user by its name
+            </summary>
+            <param name="username"></param>
+            <returns><see cref="T:KLGproject.Repositories.AppObjects.User"/></returns>
+            <exception cref="T:KLGproject.Repositories.CustomExceptions.UserNotFoundException"></exception>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.SetUserGame(System.Int32,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Sets the User Game
+            </summary>
+            <param name="_currentUserId"></param>
+            <param name="_id"></param>
+            <param name="_liked"></param>
+            <param name="_disliked"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.CheckIfGameExistsForUser(System.Int32,System.Int32,System.String)">
+            <summary>
+            Checks if the game exits for the user
+            </summary>
+            <param name="userId"></param>
+            <param name="gameId"></param>
+            <param name="tableName"></param>
+            <returns><see cref="T:System.Collections.Generic.List`1"/></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.UpdateUserGame(System.Int32,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Updates the user game status
+            </summary>
+            <param name="userId"></param>
+            <param name="gameId"></param>
+            <param name="liked"></param>
+            <param name="disliked"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetUserGameStatus(System.Int32,System.Int32)">
+            <summary>
+            Gets the user game status
+            </summary>
+            <param name="userId"></param>
+            <param name="gameId"></param>
+            <returns><see cref="!:(bool,bool)"/></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetUserLibrary(System.Int32)">
+            <summary>
+            Gets the ids of the games that are in the user Library
+            </summary>
+            <param name="userId"></param>
+            <returns><see cref="!:List&lt;int&gt;"/></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.AddToUserLibrary(System.Int32,System.Int32)">
+            <summary>
+            Adds to the user library a new game<br/>
+            <see cref="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.CheckIfGameExistsForUser(System.Int32,System.Int32,System.String)"/>
+            </summary>
+            <param name="_currentUserId"></param>
+            <param name="_id"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.UpdateUserGame(System.Int32,System.Int32)">
+            <summary>
+            Deletes the user game from the Library
+            <see cref="T:System.NotImplementedException"/>
+            </summary>
+            <param name="currentUserId"></param>
+            <param name="id"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetMoreLikedGames">
+            <summary>
+            Gets the more liked Games List, and get the 3 whith more likes
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.List`1"/></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.UpdateUser(System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Updates the user fields in the data base
+            </summary>
+            <param name="_currentUserId"></param>
+            <param name="newUserName"></param>
+            <param name="email"></param>
+            <param name="password"></param>
+            <exception cref="T:KLGproject.Repositories.CustomExceptions.UserGameNotFoundException"></exception>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.UserExists(System.String)">
+            <summary>
+            Checks if the user already exits in the app<br/>
+            </summary>
+            <param name="username"></param>
+            <returns><see cref="T:System.Boolean"/></returns>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.DeleteUserFromDataBase(KLGproject.Repositories.AppObjects.User)">
+            <summary>
+            Delete a user from the database
+            </summary>
+            <param name="user"></param>
+        </member>
+        <member name="M:KLGproject.Resources.Libraries.DB.Lib.SQLite.GetAllUsers">
+            <summary>
+            GetsTheUsers List from the data base
+            </summary>
+            <returns><see cref="T:System.Collections.Generic.List`1"/></returns>
+        </member>
+    </members>
+</doc>
