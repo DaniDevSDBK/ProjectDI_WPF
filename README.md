@@ -19,15 +19,15 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Screenshots
 
-![Log In](/Others/LogIn).
-![Register](./Others/Register).
-![Home](./Others/Home).
-![Newcomers](./Others/Newcomers).
-![Find My Game](./Others/FindMyGame).
-![My Library](./Others/MyLibrary).
-![Settings](./Others/Settings).
-![Help](./Others/Help).
-![Admin Panel](./Others/AdminPanel).
+![Log In](./Others/LogIn.png).
+![Register](./Others/Register.png).
+![Home](./Others/Home.png).
+![Newcomers](./Others/Newcomers.png).
+![Find My Game](./Others/FindMyGame.png).
+![My Library](./Others/MyLibrary.png).
+![Settings](./Others/Settings.png).
+![Help](./Others/Help.png).
+![Admin Panel](./Others/AdminPanel.png).
 
 ## Instalación
 
