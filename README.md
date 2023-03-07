@@ -18,54 +18,24 @@ The present code can be used in other projects. However, it is suggested to cons
 - Admin Panel lacks design. However, the functionality is implemented.
 
 ## Screenshots
-
-```
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-
-  <ul class="slider">
-    <li><img src="./Others/LogIn.png"></li>
-    <li><img src="./Others/Register.png"></li>
-    <li><img src="./Others/Home.png"></li>
-  </ul>
-
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-        arrows: true,
-        prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
-      });
-    });
-  </script>
-  ```
-
-## Instalación
-
-Explica cómo instalar y configurar tu proyecto en un entorno de desarrollo o producción. Si es necesario, proporciona un ejemplo de archivo de configuración.
-
-## Uso
-
-Describe cómo utilizar tu proyecto y proporciona algunos ejemplos. Si es posible, proporciona también ejemplos de código.
-
-## Contribución
-
-Explica cómo los usuarios pueden contribuir al proyecto. Por ejemplo, puedes incluir una guía para la presentación de problemas y/o solicitudes de extracción.
-
-## Créditos
-
-Agradece a las personas que han contribuido al proyecto. Si has utilizado bibliotecas de terceros, asegúrate de incluirlas en esta sección y darles crédito.
-
-## Licencia
-
-Especifica la licencia bajo la cual se distribuye tu proyecto.
-
-## Contacto
-
-Proporciona información sobre cómo los usuarios pueden contactarte en caso de tener preguntas o problemas.
+### LogIn 
+![Log In](./Others/LogIn.png)
+### Register
+![Register](./Others/Register.png)
+### Home
+![Home](./Others/Home.png)
+### Newcomers
+![Newcomers](./Others/Newcomers.png)
+### Find My Game
+![Find My Game](./Others/FindMyGame.png)
+### My Library
+![My Library](./Others/MyLibrary.png)
+### Settings
+![Settings](./Others/Settings.png)
+### Help
+![Help](./Others/Help.png)
+### Admin Panel
+![Admin Panel](./Others/AdminPanel.png)
 
 ## Recursos adicionales
 
