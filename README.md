@@ -37,20 +37,10 @@ The present code can be used in other projects. However, it is suggested to cons
 ### Admin Panel
 ![Admin Panel](./Others/AdminPanel.png)
 
-## Recursos adicionales
+## Additional
 
-- [Documentation](https://DaniDevSDBK.github.io/ProjectDI/Others/Help/)
-- [Página de inicio](https://tu-usuario.github.io/tu-proyecto/)
-- [Ejemplos de código](https://github.com/tu-usuario/tu-proyecto/tree/master/ejemplos)
+- Do not forget to configure the data base in order the needs you may have. If you want to follow this example you can install a SQLite DB.
 
-Si tienes documentación adicional, como un manual de usuario o una guía de inicio rápido, asegúrate de incluirla en esta sección. También puedes agregar enlaces a recursos relevantes, como una página de preguntas frecuentes o un blog.
+## SQL
 
-## Ejecutar en local
-
-Para ejecutar el proyecto en local:
-
-1. Clona este repositorio
-2. Abre la carpeta del proyecto en tu terminal
-3. Instala las dependencias con `npm install`
-4. Ejecuta el proyecto con `npm start`
-5. Abre tu navegador y accede a `http://localhost:3000`
+- Click [here]()
