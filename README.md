@@ -1,7 +1,7 @@
 # Nombre del proyecto
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/tu-usuario/tu-proyecto/releases)
-[![License](https://img.shields.io/badge/license-GNU-GPL.svg)](https://opensource.org/licenses/GNU)
+[![License](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 
 Una descripción breve del proyecto y su objetivo.
 
