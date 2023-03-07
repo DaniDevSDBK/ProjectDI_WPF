@@ -19,8 +19,15 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Screenshots
 
-You can see the app screenshots [here](https://DaniDevSDBK.github.io/ProjectDI/Others/index.html).
-
+![Log In](./Others/LogIn).
+![Register](./Others/Register).
+![Home](./Others/Home).
+![Newcomers](./Others/Newcomers).
+![Find My Game](./Others/FindMyGame).
+![My Library](./Others/MyLibrary).
+![Settings](./Others/Settings).
+![Help](./Others/Help).
+![Admin Panel](./Others/AdminPanel).
 
 ## Instalación
 
