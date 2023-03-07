@@ -1,4 +1,4 @@
-# ProjectDI
+# ProjectDI WPF
 
 [![Version](https://img.shields.io/badge/version-1.0-blue.svg)](https://github.com/tu-usuario/tu-proyecto/releases)
 [![License](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
@@ -39,8 +39,8 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Additional
 
-- Do not forget to configure the data base in order the needs you may have. If you want to follow this example you can install a SQLite DB.
+- Do not forget to configure the database according to the needs you may have. If you want to follow this example, you can install a SQLite database.
 
 ## SQL
 
-- Click [here]()
+- Click [here](./Others/Script.sql) to access the sql file.
