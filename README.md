@@ -18,16 +18,24 @@ The present code can be used in other projects. However, it is suggested to cons
 - Admin Panel lacks design. However, the functionality is implemented.
 
 ## Screenshots
-
-![Log In](./Others/LogIn.png).
-![Register](./Others/Register.png).
-![Home](./Others/Home.png).
-![Newcomers](./Others/Newcomers.png).
-![Find My Game](./Others/FindMyGame.png).
-![My Library](./Others/MyLibrary.png).
-![Settings](./Others/Settings.png).
-![Help](./Others/Help.png).
-![Admin Panel](./Others/AdminPanel.png).
+###LogIn
+![Log In](./Others/LogIn.png)
+###Register
+![Register](./Others/Register.png)
+###Home
+![Home](./Others/Home.png)
+###Newcomers
+![Newcomers](./Others/Newcomers.png)
+###Find My Game
+![Find My Game](./Others/FindMyGame.png)
+###My Library
+![My Library](./Others/MyLibrary.png)
+###Settings
+![Settings](./Others/Settings.png)
+###Help
+![Help](./Others/Help.png)
+###Admin Panel
+![Admin Panel](./Others/AdminPanel.png)
 
 ## Instalación
 
