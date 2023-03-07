@@ -19,7 +19,7 @@ The present code can be used in other projects. However, it is suggested to cons
 
 ## Screenshots
 
-![Log In](./Others/LogIn).
+![Log In](/Others/LogIn).
 ![Register](./Others/Register).
 ![Home](./Others/Home).
 ![Newcomers](./Others/Newcomers).
