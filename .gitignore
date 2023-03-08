@@ -363,5 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Ignore the data base Folder an the Img folder
-DB
-Img
+Others/DB/
+Others/Img/
