@@ -75,7 +75,7 @@ namespace KLGproject.Repositories.Controls
 
                 _tryUser = myDb.GetUserByName(name);
 
-                if (BCrypt.Net.BCrypt.Verify(this.txtBUserPassword.Password, _tryUser.Password))
+                    if (BCrypt.Net.BCrypt.Verify(this.txtBUserPassword.Password, _tryUser.Password))
                 {
 
                     userLoginEvent(this, new LoggedIn(true, _tryUser));
