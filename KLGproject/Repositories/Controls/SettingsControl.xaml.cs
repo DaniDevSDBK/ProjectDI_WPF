@@ -78,7 +78,6 @@ namespace KLGproject.Repositories.Controls
                     {
 
                         this.ErrorLabel.Content = "The User Name Already Exists.";
-                        this.ErrorLabel.Content = "";
                         this.txtUserName.Text = _currentUser.Name;
                         this.txtEmail.Text = _currentUser.Email;
                         this.txtPassword.Password = "";
