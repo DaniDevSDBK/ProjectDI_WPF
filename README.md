@@ -4,7 +4,7 @@
 [![License](https://img.shields.io/badge/license-GNU%20GPL%20v3.0-blue.svg)](https://opensource.org/licenses/GPL-3.0)
 
 This project is for educational purposes and has been developed for the interface development course. It is not intended to privatize, nor to obtain any concrete profit. 
-The present code can be used in other projects. However, it is suggested to consult the terms of the attached license to make good use of it.
+The present code can be use in other projects. However, it is suggested to consult the terms of the attached license to make good use of it.
 
 ## Characteristics
 
