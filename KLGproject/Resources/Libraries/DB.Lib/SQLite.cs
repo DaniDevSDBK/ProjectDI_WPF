@@ -462,7 +462,7 @@ namespace KLGproject.Resources.Libraries.DB.Lib
             using (SQLiteConnection connection = new SQLiteConnection(_connectionString))
             {
                 connection.Open();
-                using (SQLiteCommand command = new SQLiteCommand("SELECT COUNT(*) FROM Users WHERE Username = @Username", connection))
+                using (SQLiteCommand command = new SQLiteCommand("SELECT COUNT(*) FROM USER WHERE NAME = @Username", connection))
                 {
                     command.Parameters.AddWithValue("@Username", username);
                     n = ((long)command.ExecuteScalar()) > 0;

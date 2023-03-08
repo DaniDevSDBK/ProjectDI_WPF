@@ -54,21 +54,35 @@ namespace KLGproject.Repositories.Controls
 
                 if(this.txtUserName.Text==null||this.txtEmail.Text==null||this.txtPassword.Password==null) 
                 {
-
-                    this.ErrorLabel.Content = "Fields are Empty. Please, fill the information correctly.";
+                    
                     this.txtUserName.Text = _currentUser.Name;
                     this.txtEmail.Text = _currentUser.Email;
                     this.txtPassword.Password = "";
+                    this.ErrorLabel.Content = "Fields are Empty. Please, fill the information correctly.";
 
                 }
                 else
                 {
 
-                    this.db.UpdateUser(_currentUser.Id, this.txtUserName.Text, this.txtEmail.Text, BCrypt.Net.BCrypt.HashPassword(this.txtPassword.Password,11));
-                    this.ErrorLabel.Content = "";
-                    this.txtUserName.Text = _currentUser.Name;
-                    this.txtEmail.Text = _currentUser.Email;
-                    this.txtPassword.Password = "";
+                    if(!db.UserExists(this.txtUserName.Text))
+                    {
+
+                        this.db.UpdateUser(_currentUser.Id, this.txtUserName.Text, this.txtEmail.Text, BCrypt.Net.BCrypt.HashPassword(this.txtPassword.Password, 11));
+                        this.ErrorLabel.Content = "";
+                        this.txtUserName.Text = _currentUser.Name;
+                        this.txtEmail.Text = _currentUser.Email;
+                        this.txtPassword.Password = "";
+
+                    }
+                    else
+                    {
+
+                        this.ErrorLabel.Content = "The User Name Already Exists.";
+                        this.ErrorLabel.Content = "";
+                        this.txtUserName.Text = _currentUser.Name;
+                        this.txtEmail.Text = _currentUser.Email;
+                        this.txtPassword.Password = "";
+                    }
 
                 }
 

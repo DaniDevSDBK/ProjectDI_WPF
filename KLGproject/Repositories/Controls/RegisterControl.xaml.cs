@@ -150,28 +150,51 @@ namespace KLGproject.Repositories.Controls
             if(this.txtBUserName.Text!= null && this.txtBEmail.Text!=null && this.PasswordBox.Password!=null) 
             {
 
-                this.txtErrortb.Text = "Registering...";
+                if(this.PasswordBox.Password != this.ConfirmPasswordBox.Password)
+                {
 
-                Dictionary<string, object> parameters = new Dictionary<string, object>();
-                parameters.Add("@Username", this.txtBUserName.Text);
-                parameters.Add("@Password", BCrypt.Net.BCrypt.HashPassword(this.PasswordBox.Password, 11));
-                parameters.Add("@AccessLevel", 0);
+                    this.txtErrortb.Text = "Passwords does not match.";
+                    this.txtBUserName.Text = "";
+                    this.txtBEmail.Text = "";
+                    this.PasswordBox.Password = "";
+                    this.ConfirmPasswordBox.Password = "";
 
-                myDb.ExecuteNonQuery("INSERT INTO USER (NAME, PWD, TIPO) VALUES (@Username, @Password, @AccessLevel)", parameters);
+                    return false;
 
-                this.txtBUserName.Text = "";
-                this.txtBEmail.Text = "";
-                this.PasswordBox.Password = "";
+                }
+                else
+                {
 
-                goBackEvent(this, new RegisterGoBack(true));
+                    this.txtErrortb.Text = "Registering...";
 
-                return true;
+                    Dictionary<string, object> parameters = new Dictionary<string, object>();
+                    parameters.Add("@Username", this.txtBUserName.Text);
+                    parameters.Add("@Password", BCrypt.Net.BCrypt.HashPassword(this.PasswordBox.Password, 11));
+                    parameters.Add("@AccessLevel", 0);
+                    parameters.Add("@Email", this.txtBEmail.Text);
+
+                    myDb.ExecuteNonQuery("INSERT INTO USER (NAME, PWD, TIPO, EMAIL) VALUES (@Username, @Password, @AccessLevel, @Email)", parameters);
+
+                    this.txtBUserName.Text = "";
+                    this.txtBEmail.Text = "";
+                    this.PasswordBox.Password = "";
+
+                    goBackEvent(this, new RegisterGoBack(true));
+                    
+                    return true;
+
+                }
 
             }
             else
             {
 
                 this.txtErrortb.Text = "Fields are empty or not correct.";
+                this.txtBUserName.Text = "";
+                this.txtBEmail.Text = "";
+                this.PasswordBox.Password = "";
+                this.ConfirmPasswordBox.Password = "";
+
                 return false;
             }
         }
